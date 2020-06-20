@@ -4,6 +4,9 @@
 
 Generate the names of random fruits.
 
+The name of fruits refers to this page.
+[Wikijunior:Fruit Alphabet/Complete](https://en.wikibooks.org/wiki/Wikijunior:Fruit_Alphabet/Complete)
+
 ## Install
 
 ```bash
