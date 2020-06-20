@@ -4,6 +4,7 @@
   "description": "Generate the names of random fruits.",
   "main": "main.js",
   "scripts": {
+    "test": "jest",
     "fmt": "prettier --write '**/*.{js,json,md}'"
   },
   "repository": {
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/shinshin86/random-fruits-name.js#readme",
   "devDependencies": {
+    "jest": "^26.0.1",
     "prettier": "^2.0.5"
   },
   "prettier": {
