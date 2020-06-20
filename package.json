@@ -1,0 +1,32 @@
+{
+  "name": "random-fruits-name",
+  "version": "1.0.0",
+  "description": "Generate the names of random fruits.",
+  "main": "main.js",
+  "scripts": {
+    "fmt": "prettier --write '**/*.{js,json,md}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shinshin86/random-fruits-name.js.git"
+  },
+  "keywords": [
+    "generator",
+    "string-generator",
+    "random-generator",
+    "random-fruits",
+    "random-fruits-name"
+  ],
+  "author": "shinshin86 <shinshin86npm@gmail.com> (https://github.com/shinshin86)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shinshin86/random-fruits-name.js/issues"
+  },
+  "homepage": "https://github.com/shinshin86/random-fruits-name.js#readme",
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
