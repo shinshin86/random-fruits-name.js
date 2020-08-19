@@ -40,3 +40,17 @@ export default App;
 const getRandomFruitsName = require('random-fruits-name');
 console.log(getRandomFruitsName());
 ```
+
+## Development
+
+Test
+
+```bash
+npm run test
+```
+
+Code format
+
+```bash
+npm run fmt
+```
