@@ -47,9 +47,10 @@ Now with differents languages, using [ISO-639-1 codes](https://en.wikipedia.org/
 const getRandomFruitsName = require('random-fruits-name');
 console.log(getRandomFruitsName('en')); // Apples;
 console.log(getRandomFruitsName('es')); // Manzana;
+console.log(getRandomFruitsName('ja')); // りんご;
 ```
 
-_currently only support 'en' and 'es' languages, but you can make a Pull Request and add the language you want_
+_currently only support 'en' and 'es' and 'ja' languages, but you can make a Pull Request and add the language you want_
 
 ## Development
 
