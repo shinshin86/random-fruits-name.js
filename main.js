@@ -1,6 +1,6 @@
-const enFruits = require('./en.json');
-const esFruits = require('./es.json');
-const jaFruits = require('./ja.json');
+const enFruits = require('./langs/en.json');
+const esFruits = require('./langs/es.json');
+const jaFruits = require('./langs/ja.json');
 
 const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
 
