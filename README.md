@@ -37,21 +37,30 @@ export default App;
 ### Node.js
 
 ```javascript
-const getRandomFruitsName = require('random-fruits-name');
-console.log(getRandomFruitsName());
+const getRandomFruitsName = require('random-fruits-name')
+console.log(getRandomFruitsName()) // Apple;
 ```
 
 Now with differents languages, using [ISO-639-1 codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 
 ```javascript
-const getRandomFruitsName = require('random-fruits-name');
-console.log(getRandomFruitsName('en')); // Apples;
-console.log(getRandomFruitsName('es')); // Manzana;
-console.log(getRandomFruitsName('ja')); // りんご;
-console.log(getRandomFruitsName('pt')); // Maça;
+const getRandomFruitsName = require('random-fruits-name')
+console.log(getRandomFruitsName('en')) // Apple - English is default language;
+console.log(getRandomFruitsName('es')) // Manzana;
+console.log(getRandomFruitsName('ja')) // りんご;
+console.log(getRandomFruitsName('pt')) // Maça;
 ```
 
-_currently only support 'en' and 'es' and 'ja' languages, but you can make a Pull Request and add the language you want_
+#### Languages Supported
+
+| Languages  | Code Lang |
+| ---------- | --------- |
+| English    | en        |
+| Spanish    | es        |
+| Japanese   | ja        |
+| Portuguese | pt        |
+
+_you can make a Pull Request and add the language you want_
 
 ## Development
 
