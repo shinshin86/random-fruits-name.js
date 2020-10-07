@@ -48,6 +48,7 @@ const getRandomFruitsName = require('random-fruits-name');
 console.log(getRandomFruitsName('en')); // Apples;
 console.log(getRandomFruitsName('es')); // Manzana;
 console.log(getRandomFruitsName('ja')); // りんご;
+console.log(getRandomFruitsName('pt')); // Maça;
 ```
 
 _currently only support 'en' and 'es' and 'ja' languages, but you can make a Pull Request and add the language you want_
