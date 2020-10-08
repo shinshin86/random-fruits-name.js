@@ -15,3 +15,7 @@ test('Get fruits name text in Spanish', () => {
 test('Get fruits name text in Japanese', () => {
   expect(getRandomFruitsName('ja')).toBeTruthy()
 })
+
+test('Get fruits name text in Portuguese', () => {
+  expect(getRandomFruitsName('pt')).toBeTruthy()
+})
