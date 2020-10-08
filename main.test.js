@@ -1,17 +1,17 @@
-const getRandomFruitsName = require('./main');
+const getRandomFruitsName = require('./main')
 
 test('Get fruits name text with default name', () => {
-  expect(getRandomFruitsName()).toBeTruthy();
-});
+  expect(getRandomFruitsName()).toBeTruthy()
+})
 
 test('Get fruits name text in English', () => {
-  expect(getRandomFruitsName('en')).toBeTruthy();
-});
+  expect(getRandomFruitsName('en')).toBeTruthy()
+})
 
 test('Get fruits name text in Spanish', () => {
-  expect(getRandomFruitsName('es')).toBeTruthy();
-});
+  expect(getRandomFruitsName('es')).toBeTruthy()
+})
 
 test('Get fruits name text in Japanese', () => {
-  expect(getRandomFruitsName('ja')).toBeTruthy();
-});
+  expect(getRandomFruitsName('ja')).toBeTruthy()
+})

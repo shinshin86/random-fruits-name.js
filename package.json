@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "jest",
-    "fmt": "prettier --write '**/*.{js,json,md}'"
+    "fmt": "prettier --write '**/*.{js,json}'"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,8 @@
     "prettier": "^2.0.5"
   },
   "prettier": {
-    "singleQuote": true
+    "singleQuote": true,
+    "semi": false,
+    "tabWidth": 2
   }
 }
