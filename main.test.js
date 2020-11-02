@@ -75,5 +75,27 @@ describe('random-fruits-name', () => {
         expect(() => getRandomFruitsName('pt', { maxWords: 'test' })).toThrow()
       })
     })
+
+    describe('If `maxWords` is not a number (boolean case).', () => {
+      test('Select English', () => {
+        expect(() => getRandomFruitsName('en', { maxWords: true })).toThrow()
+        expect(() => getRandomFruitsName('en', { maxWords: false })).toThrow()
+      })
+
+      test('Select Spanish', () => {
+        expect(() => getRandomFruitsName('es', { maxWords: true })).toThrow()
+        expect(() => getRandomFruitsName('es', { maxWords: false })).toThrow()
+      })
+
+      test('Select Japanese', () => {
+        expect(() => getRandomFruitsName('ja', { maxWords: true })).toThrow()
+        expect(() => getRandomFruitsName('ja', { maxWords: false })).toThrow()
+      })
+
+      test('Select Portuguese', () => {
+        expect(() => getRandomFruitsName('pt', { maxWords: true })).toThrow()
+        expect(() => getRandomFruitsName('pt', { maxWords: false })).toThrow()
+      })
+    })
   })
 })
