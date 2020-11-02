@@ -28,6 +28,11 @@ const getRandomFruitsName = (language = 'en', option = {}) => {
     throw new Error('The selected language is invalid.')
   }
 
+  const optionKeys = Object.keys(option)
+  if (!!optionKeys.length && !optionKeys.includes('maxWords')) {
+    throw new Error('Specified option is invalid.')
+  }
+
   let fruits = enFruits.fruits
   if (language === 'es') fruits = esFruits.fruits
   if (language === 'ja') fruits = jaFruits.fruits

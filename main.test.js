@@ -174,4 +174,10 @@ describe('random-fruits-name', () => {
       })
     })
   })
+
+  describe('If specify a non-existent option', () => {
+    test('Specify `test` option', () => {
+      expect(() => getRandomFruitsName('en', { test: 1 })).toThrow()
+    })
+  })
 })
