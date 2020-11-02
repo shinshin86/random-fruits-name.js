@@ -19,14 +19,18 @@ yarn add random-fruits-name
 
 ### React
 
-```bash
+```javascript
 import React from 'react';
 import getRandomFruitsName from 'random-fruits-name'
 
 function App() {
   return (
     <div>
-      <p>{getRandomFruitsName()}</p>
+      <p>{getRandomFruitsName()}</p> {/* Apple - English is default language */}
+      <p>{getRandomFruitsName('en')}</p> {/* Apple */}
+      <p>{getRandomFruitsName('es')}</p> {/* Manzana */}
+      <p>{getRandomFruitsName('ja')}</p> {/* りんご */}
+      <p>{getRandomFruitsName('pt')}</p> {/* Maça */}
     </div>
   );
 }
