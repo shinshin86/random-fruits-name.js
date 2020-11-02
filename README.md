@@ -58,6 +58,29 @@ we are using [ISO-639-1 codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_c
 
 _you can make a Pull Request and add the language you want_
 
+
+
+#### Option
+
+It is possible to specify opttion as the second argument.
+**Note that in this case, the language must be specified as the first argument.**
+
+```javascript
+getRandomFruitsName(lang, option)
+```
+
+
+
+Currently, there is an option called `maxWords`.
+
+```javascript
+getRandomFruitsName('en', {maxWords: 1})
+```
+
+Which will ensure it will only return one word fruit name.
+
+
+
 ## Development
 
 Test
