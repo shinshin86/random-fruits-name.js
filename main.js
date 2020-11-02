@@ -25,7 +25,7 @@ const filterMaxWords = (fruits, maxWords) => {
  */
 const getRandomFruitsName = (language = 'en', option = {}) => {
   if (!['en', 'es', 'ja', 'pt'].includes(language)) {
-    throw new Error('The selected language is invalid.')
+    throw new Error('Selected language is invalid.')
   }
 
   const optionKeys = Object.keys(option)
