@@ -29,7 +29,7 @@ const getRandomFruitsName = (language = 'en', option = {}) => {
   if (language === 'ja') fruits = jaFruits.fruits
   if (language === 'pt') fruits = ptFruits.fruits
 
-  if (option.maxWords) fruits = filterMaxWords(fruits, option.maxWords)
+  if ('maxWords' in option) fruits = filterMaxWords(fruits, option.maxWords)
   return fruits[getRandomInt(fruits.length)]
 }
 
