@@ -24,6 +24,10 @@ const filterMaxWords = (fruits, maxWords) => {
  * @returns {string} return a string with fruits name, example: 'Apple'
  */
 const getRandomFruitsName = (language = 'en', option = {}) => {
+  if (!['en', 'es', 'ja', 'pt'].includes(language)) {
+    throw new Error('The selected language is invalid.')
+  }
+
   let fruits = enFruits.fruits
   if (language === 'es') fruits = esFruits.fruits
   if (language === 'ja') fruits = jaFruits.fruits

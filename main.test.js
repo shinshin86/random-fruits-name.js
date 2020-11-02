@@ -133,5 +133,11 @@ describe('random-fruits-name', () => {
         expect(() => getRandomFruitsName('pt', { maxWords: '' })).toThrow()
       })
     })
+
+    describe('When `maxWords` is specified without `lang`.', () => {
+      test('Only specify `maxWords` as an option.', () => {
+        expect(() => getRandomFruitsName({ maxWords: 1 })).toThrow()
+      })
+    })
   })
 })
