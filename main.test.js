@@ -58,6 +58,40 @@ describe('random-fruits-name', () => {
       })
     })
 
+    describe('If `maxWords: 2` is specified.', () => {
+      test('Select English', () => {
+        const fruitsName = getRandomFruitsName('en', { maxWords: 2 })
+        expect(fruitsName).toBeTruthy()
+
+        const wordCount = fruitsName.split(' ').length
+        expect(wordCount <= 2).toBeTruthy()
+      })
+
+      test('Select Spanish', () => {
+        const fruitsName = getRandomFruitsName('es', { maxWords: 2 })
+        expect(fruitsName).toBeTruthy()
+
+        const wordCount = fruitsName.split(' ').length
+        expect(wordCount <= 2).toBeTruthy()
+      })
+
+      test('Select Japanese', () => {
+        const fruitsName = getRandomFruitsName('ja', { maxWords: 2 })
+        expect(fruitsName).toBeTruthy()
+
+        const wordCount = fruitsName.split(' ').length
+        expect(wordCount <= 2).toBeTruthy()
+      })
+
+      test('Select Portuguese', () => {
+        const fruitsName = getRandomFruitsName('pt', { maxWords: 2 })
+        expect(fruitsName).toBeTruthy()
+
+        const wordCount = fruitsName.split(' ').length
+        expect(wordCount <= 2).toBeTruthy()
+      })
+    })
+
     describe('If `maxWords` is not a number (strings case).', () => {
       test('Select English', () => {
         expect(() => getRandomFruitsName('en', { maxWords: '1' })).toThrow()
