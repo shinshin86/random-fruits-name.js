@@ -19,14 +19,18 @@ yarn add random-fruits-name
 
 ### React
 
-```bash
+```javascript
 import React from 'react';
 import getRandomFruitsName from 'random-fruits-name'
 
 function App() {
   return (
     <div>
-      <p>{getRandomFruitsName()}</p>
+      <p>{getRandomFruitsName()}</p> {/* Apple - English is default language */}
+      <p>{getRandomFruitsName('en')}</p> {/* Apple */}
+      <p>{getRandomFruitsName('es')}</p> {/* Manzana */}
+      <p>{getRandomFruitsName('ja')}</p> {/* りんご */}
+      <p>{getRandomFruitsName('pt')}</p> {/* Maça */}
     </div>
   );
 }
@@ -57,6 +61,29 @@ console.log(getRandomFruitsName('pt')) // Maça
 we are using [ISO-639-1 codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) as code for differents languages
 
 _you can make a Pull Request and add the language you want_
+
+
+
+#### Option
+
+It is possible to specify opttion as the second argument.
+**Note that in this case, the language must be specified as the first argument.**
+
+```javascript
+getRandomFruitsName(lang, option)
+```
+
+
+
+Currently, there is an option called `maxWords`.
+
+```javascript
+getRandomFruitsName('en', {maxWords: 1})
+```
+
+Which will ensure it will only return one word fruit name.
+
+
 
 ## Development
 
