@@ -100,3 +100,27 @@ Code format
 ```bash
 npm run fmt
 ```
+
+
+
+## Contributors
+
+Thanks to all contributors!
+
+<a href="https://github.com/shinshin86/random-fruits-name.js/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=shinshin86/random-fruits-name.js" />
+</a>
+
+Made with [contributors-img](https://contrib.rocks).
+
+
+
+## Licence
+
+[MIT](https://raw.githubusercontent.com/shinshin86/random-fruits-name.js/master/LICENSE)
+
+
+
+## Author
+
+[Yuki Shindo](https://shinshin86.com/)
