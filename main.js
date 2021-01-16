@@ -2,6 +2,7 @@ const enFruits = require('./langs/en.json')
 const esFruits = require('./langs/es.json')
 const jaFruits = require('./langs/ja.json')
 const ptFruits = require('./langs/pt.json')
+const nlFruits = require('./langs/nl.json')
 
 const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max))
 
@@ -24,7 +25,7 @@ const filterMaxWords = (fruits, maxWords) => {
  * @returns {string} return a string with fruits name, example: 'Apple'
  */
 const getRandomFruitsName = (language = 'en', option = {}) => {
-  if (!['en', 'es', 'ja', 'pt'].includes(language)) {
+  if (!['en', 'es', 'ja', 'pt', 'nl'].includes(language)) {
     throw new Error('Selected language is invalid.')
   }
 
@@ -37,6 +38,7 @@ const getRandomFruitsName = (language = 'en', option = {}) => {
   if (language === 'es') fruits = esFruits.fruits
   if (language === 'ja') fruits = jaFruits.fruits
   if (language === 'pt') fruits = ptFruits.fruits
+  if (language === 'nl') fruits = nlFruits.fruits
 
   if ('maxWords' in option) fruits = filterMaxWords(fruits, option.maxWords)
   return fruits[getRandomInt(fruits.length)]
