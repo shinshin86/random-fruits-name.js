@@ -33,6 +33,7 @@ function App() {
       <p>{getRandomFruitsName('es')}</p> {/* Manzana */}
       <p>{getRandomFruitsName('ja')}</p> {/* りんご */}
       <p>{getRandomFruitsName('pt')}</p> {/* Maça */}
+      <p>{getRandomFruitsName('nl')}</p> {/* Appel */}
     </div>
   );
 }
@@ -49,6 +50,7 @@ console.log(getRandomFruitsName('en')) // Apple
 console.log(getRandomFruitsName('es')) // Manzana
 console.log(getRandomFruitsName('ja')) // りんご
 console.log(getRandomFruitsName('pt')) // Maça
+console.log(getRandomFruitsName('nl')) // Appel
 ```
 
 #### Languages Supported
@@ -59,6 +61,7 @@ console.log(getRandomFruitsName('pt')) // Maça
 | Spanish    | es        |
 | Japanese   | ja        |
 | Portuguese | pt        |
+| Dutch      | nl        |
 
 we are using [ISO-639-1 codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) as code for differents languages
 
