@@ -68,6 +68,22 @@ describe('random-fruits-name', () => {
         // `fruitsName` should  hasn't space
         expect(fruitsName.split(' ').length).toEqual(1)
       })
+
+      test('Select French', () => {
+        const fruitsName = getRandomFruitsName('fr', { maxWords: 1 })
+        expect(fruitsName).toBeTruthy()
+
+        // `fruitsName` should  hasn't space
+        expect(fruitsName.split(' ').length).toEqual(1)
+      })
+
+      test('Select German', () => {
+        const fruitsName = getRandomFruitsName('de', { maxWords: 1 })
+        expect(fruitsName).toBeTruthy()
+
+        // `fruitsName` should  hasn't space
+        expect(fruitsName.split(' ').length).toEqual(1)
+      })
     })
 
     describe('If `maxWords: 2` is specified.', () => {
@@ -110,6 +126,22 @@ describe('random-fruits-name', () => {
         const wordCount = fruitsName.split(' ').length
         expect(wordCount <= 2).toBeTruthy()
       })
+
+      test('Select French', () => {
+        const fruitsName = getRandomFruitsName('fr', { maxWords: 2 })
+        expect(fruitsName).toBeTruthy()
+
+        const wordCount = fruitsName.split(' ').length
+        expect(wordCount <= 2).toBeTruthy()
+      })
+
+      test('Select German', () => {
+        const fruitsName = getRandomFruitsName('de', { maxWords: 2 })
+        expect(fruitsName).toBeTruthy()
+
+        const wordCount = fruitsName.split(' ').length
+        expect(wordCount <= 2).toBeTruthy()
+      })
     })
 
     describe('If `maxWords` is not a number (strings case).', () => {
@@ -132,6 +164,14 @@ describe('random-fruits-name', () => {
       test('Select Dutch', () => {
         expect(() => getRandomFruitsName('nl', { maxWords: '1' })).toThrow()
       })
+
+      test('Select French', () => {
+        expect(() => getRandomFruitsName('fr', { maxWords: '1' })).toThrow()
+      })
+
+      test('Select German', () => {
+        expect(() => getRandomFruitsName('de', { maxWords: '1' })).toThrow()
+      })
     })
 
     describe('If `maxWords` is not a number (float case).', () => {
@@ -153,6 +193,14 @@ describe('random-fruits-name', () => {
 
       test('Select Dutch', () => {
         expect(() => getRandomFruitsName('nl', { maxWords: 1.23 })).toThrow()
+      })
+
+      test('Select French', () => {
+        expect(() => getRandomFruitsName('nl', { maxWords: 1.23 })).toThrow()
+      })
+
+      test('Select German', () => {
+        expect(() => getRandomFruitsName('de', { maxWords: 1.23 })).toThrow()
       })
     })
 
@@ -181,6 +229,16 @@ describe('random-fruits-name', () => {
         expect(() => getRandomFruitsName('nl', { maxWords: true })).toThrow()
         expect(() => getRandomFruitsName('nl', { maxWords: false })).toThrow()
       })
+
+      test('Select French', () => {
+        expect(() => getRandomFruitsName('fr', { maxWords: true })).toThrow()
+        expect(() => getRandomFruitsName('fr', { maxWords: false })).toThrow()
+      })
+
+      test('Select German', () => {
+        expect(() => getRandomFruitsName('de', { maxWords: true })).toThrow()
+        expect(() => getRandomFruitsName('de', { maxWords: false })).toThrow()
+      })
     })
 
     describe('If `maxWords` is not a number (value is empty case).', () => {
@@ -202,6 +260,14 @@ describe('random-fruits-name', () => {
 
       test('Select Dutch', () => {
         expect(() => getRandomFruitsName('nl', { maxWords: '' })).toThrow()
+      })
+
+      test('Select French', () => {
+        expect(() => getRandomFruitsName('fr', { maxWords: '' })).toThrow()
+      })
+
+      test('Select German', () => {
+        expect(() => getRandomFruitsName('de', { maxWords: '' })).toThrow()
       })
     })
 
