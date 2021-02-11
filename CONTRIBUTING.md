@@ -37,7 +37,7 @@ The inside of the json file is structured like this.
     "Apple",
     "Apricot",
     "Avocado",
-		.
+    .
     .
     .
   ]
