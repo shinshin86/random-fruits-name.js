@@ -95,13 +95,15 @@ Which will ensure it will only return one word fruit name.
 
 ## Development
 
-Test
+Please check out the [How to Contribute.](./CONTRIBUTING.md)
+
+**Test**
 
 ```bash
 npm run test
 ```
 
-Code format
+**Code format**
 
 ```bash
 npm run fmt
