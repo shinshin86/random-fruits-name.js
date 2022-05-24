@@ -2,7 +2,7 @@
 
 ![Random Fruits name logo](./logo/project-logo.png)
 
-[![Build Status](https://travis-ci.org/shinshin86/random-fruits-name.js.svg?branch=master)](https://travis-ci.org/shinshin86/random-fruits-name.js)
+[![Test](https://github.com/shinshin86/random-fruits-name.js/actions/workflows/test.yml/badge.svg)](https://github.com/shinshin86/random-fruits-name.js/actions/workflows/test.yml)
 
 Generate the names of random fruits.
 
