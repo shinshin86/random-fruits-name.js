@@ -48,6 +48,7 @@ export default App
 
 ```javascript
 const getRandomFruitsName = require('random-fruits-name')
+
 console.log(getRandomFruitsName()) // Apple - English is default language
 console.log(getRandomFruitsName('en')) // Apple
 console.log(getRandomFruitsName('es')) // Manzana
@@ -59,7 +60,23 @@ console.log(getRandomFruitsName('de')) // Apfel
 console.log(getRandomFruitsName('cs')) // Jablko
 ```
 
-#### Languages Supported
+### Deno
+
+```typescript
+import getRandomFruitsName from "https://esm.sh/random-fruits-name";
+
+console.log(getRandomFruitsName()); // Apple - English is default language
+console.log(getRandomFruitsName("en")); // Apple
+console.log(getRandomFruitsName("es")); // Manzana
+console.log(getRandomFruitsName("ja")); // りんご
+console.log(getRandomFruitsName("pt")); // Maça
+console.log(getRandomFruitsName("nl")); // Appel
+console.log(getRandomFruitsName("fr")); // Pomme
+console.log(getRandomFruitsName("de")); // Apfel
+console.log(getRandomFruitsName("cs")); // Jablko
+```
+
+## Languages Supported
 
 | Languages  | Code Lang |
 | ---------- | --------- |
@@ -76,9 +93,9 @@ we are using [ISO-639-1 codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_c
 
 _you can make a Pull Request and add the language you want_
 
-#### Option
+## Option
 
-It is possible to specify opttion as the second argument.
+It is possible to specify opttion as the second argument.  
 **Note that in this case, the language must be specified as the first argument.**
 
 ```javascript
@@ -125,4 +142,4 @@ Made with [contributors-img](https://contrib.rocks).
 
 ## Author
 
-[Yuki Shindo](https://shinshin86.com/)
+[Yuki Shindo](https://shinshin86.com/en)
