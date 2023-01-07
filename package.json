@@ -1,6 +1,6 @@
 {
   "name": "random-fruits-name",
-  "version": "1.9.5",
+  "version": "1.9.6",
   "description": "Generate the names of random fruits.",
   "main": "main.js",
   "scripts": {
