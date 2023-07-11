@@ -12,9 +12,14 @@ The name of fruits refers to this page.
 ## Install
 
 ```bash
+# npm
 npm install random-fruits-name
-# or
+
+# yarn
 yarn add random-fruits-name
+
+# pnpm
+pnpm add random-fruits-name
 ```
 
 ## Usage
@@ -64,6 +69,27 @@ console.log(getRandomFruitsName('cs')) // Jablko
 
 ```typescript
 import getRandomFruitsName from "https://esm.sh/random-fruits-name";
+
+console.log(getRandomFruitsName()); // Apple - English is default language
+console.log(getRandomFruitsName("en")); // Apple
+console.log(getRandomFruitsName("es")); // Manzana
+console.log(getRandomFruitsName("ja")); // りんご
+console.log(getRandomFruitsName("pt")); // Maça
+console.log(getRandomFruitsName("nl")); // Appel
+console.log(getRandomFruitsName("fr")); // Pomme
+console.log(getRandomFruitsName("de")); // Apfel
+console.log(getRandomFruitsName("cs")); // Jablko
+```
+
+### Bun
+
+```sh
+# install
+bun add random-fruits-name
+```
+
+```typescript
+import getRandomFruitsName from "random-fruits-name";
 
 console.log(getRandomFruitsName()); // Apple - English is default language
 console.log(getRandomFruitsName("en")); // Apple
