@@ -42,6 +42,7 @@ function App() {
       <p>{getRandomFruitsName('fr')}</p> {/* Pomme */}
       <p>{getRandomFruitsName('de')}</p> {/* Apfel */}
       <p>{getRandomFruitsName('cs')}</p> {/* Jablko */}
+      <p>{getRandomFruitsName('bn')}</p> {/* আপেল */}
     </div>
   )
 }
@@ -63,6 +64,7 @@ console.log(getRandomFruitsName('nl')) // Appel
 console.log(getRandomFruitsName('fr')) // Pomme
 console.log(getRandomFruitsName('de')) // Apfel
 console.log(getRandomFruitsName('cs')) // Jablko
+console.log(getRandomFruitsName('bn')) // আপেল
 ```
 
 ### Deno
@@ -79,6 +81,7 @@ console.log(getRandomFruitsName("nl")); // Appel
 console.log(getRandomFruitsName("fr")); // Pomme
 console.log(getRandomFruitsName("de")); // Apfel
 console.log(getRandomFruitsName("cs")); // Jablko
+console.log(getRandomFruitsName("bn")); // আপেল
 ```
 
 ### Bun
@@ -100,6 +103,7 @@ console.log(getRandomFruitsName("nl")); // Appel
 console.log(getRandomFruitsName("fr")); // Pomme
 console.log(getRandomFruitsName("de")); // Apfel
 console.log(getRandomFruitsName("cs")); // Jablko
+console.log(getRandomFruitsName("bn")); // আপেল
 ```
 
 ## Languages Supported
@@ -114,6 +118,7 @@ console.log(getRandomFruitsName("cs")); // Jablko
 | French     | fr        |
 | German     | de        |
 | Czech      | cs        |
+| Bengali    | bn        |
 
 we are using [ISO-639-1 codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) as code for differents languages
 
