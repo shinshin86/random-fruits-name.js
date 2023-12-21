@@ -1,3 +1,7 @@
+.git/
+.github/
 logo/
-.travis.yml
 main.test.js
+
+# mac
+.DS_Store
